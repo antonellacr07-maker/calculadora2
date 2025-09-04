@@ -1,21 +1,69 @@
-/* Add styles here */
-
+/* General styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    font-family: sans-serif;
+    background-color: #fff0f5; /* Lavender Blush */
+    color: #333;
 }
 
+/* Navigation bar */
+nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff69b4; /* Hot Pink */
+    color: #fff;
+}
+
+/* Main content container */
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e75480; /* Deep Pink */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Calculator styles */
 .calculator {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(231, 84, 128, 0.2); /* Soft pink shadow */
+    max-width: 400px;
+    margin: 2rem auto;
 }
 
 .display {

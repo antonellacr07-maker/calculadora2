@@ -11,7 +11,7 @@ const numerosConsultados = new Set();
 //se pone como array para guardar los nros con ', '
 function actualizarNumerosConsultados() {
     const numerosComoArray = Array.from(numerosConsultados);
-    numerosConsultadosDiv.textContent = [${numerosComoArray.join(', ')}];
+    numerosConsultadosDiv.textContent = `[${numerosComoArray.join(', ')}]`;
 }
 
 function mostrarTabla(){
@@ -21,7 +21,7 @@ function mostrarTabla(){
 
     for (let i = 1; i <= 10; i++) {
         const item = document.createElement('li');
-        item.textContent = ${num} x ${i} = ${num * i};
+        item.textContent = `${num} x ${i} = ${num * i}`;
         resultado.appendChild(item);
     }
     // Añadir el número al SET y actualizar la vista
