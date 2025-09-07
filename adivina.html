@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="imc.html">IMC</a></li>
+            <li><a href="calcu.html">Calculadora</a></li>
+            <li><a href="colores.html">Colores</a></li>
+            <li><a href="adivina.html">Adivina</a></li>
+            <li><a href="dias.html">Días</a></li>
+            
+        </ul>
+    </nav>
+     
+    <main id="content">
+    <div class="container">
+        <h1>Adivina el Número</h1>
+        <p>He pensado en un número entre 1 y 100. ¿Puedes adivinar cuál es?</p>
+        
+        <label for="guessInput">Tu intento:</label>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button id="guessButton">Adivinar</button>
+        
+        <p id="message" class="message"></p>
+
+        <a href="index.html">Volver al inicio</a>
+    </div>
+    <script src="adivina.js"></script>
+</body>
+</html>

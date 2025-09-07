@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Proyecto Interactivo</title>
+    <title>Generador de Paletas de Colores</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
+<body>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -13,18 +13,21 @@
             <li><a href="calcu.html">Calculadora</a></li>
             <li><a href="colores.html">Colores</a></li>
             <li><a href="adivina.html">Adivina</a></li>
-            <li><a href="dias.html">Días</a></li>
-            
+            <li><a href="dias.html">Dìas</a></li>
         </ul>
     </nav>
 
     <main id="content">
         <div class="container">
-            <h1>Tu Caja de Herramientas Digital</h1>
-            <p>Un universo de mini-aplicaciones a un clic de distancia. Desde cálculos rápidos hasta experimentos de color, todo está aquí. ¡Navega, explora y diviértete creando!</p>
+            <h2>Generador de Paletas de Colores</h2>
+            <p>Haz clic en el botón para generar una nueva paleta de colores aleatoria.</p>
+            
+            <button id="generarPaleta">Generar Nueva Paleta</button>
+            
+            <div id="paletaContenedor"></div>
         </div>
     </main>
 
-    <script src="main.js?v=2"></script>
+    <script src="colores.js"></script>
 </body>
 </html>

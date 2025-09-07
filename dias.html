@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Semana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="imc.html">IMC</a></li>
+            <li><a href="calcu.html">Calculadora</a></li>
+            <li><a href="colores.html">Colores</a></li>
+            <li><a href="adivina.html">Adivina</a></li>
+            <li><a href="dias.html">Días</a></li>
+            
+        </ul>
+    </nav>
+     
+    <main id="content">
+    <div class="container">
+        <h1>¿Qué día de la semana es?</h1>
+        <p>Introduce un número del 1 al 7.</p>
+        <input type="number" id="dayInput" min="1" max="7" placeholder="Escribe un número...">
+        <button id="checkDayButton">Mostrar Día</button>
+        <p id="resultMessage" class="message"></p>
+        <a href="index.html">Volver al inicio</a>
+    </div>
+    <script src="dias.js"></script>
+</body>
+</html>

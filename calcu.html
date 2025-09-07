@@ -1,21 +1,43 @@
-<!DOCTYPE html> <!--marca que el archivo es html-->
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!--meta= metadato(archiv codificado en UTF-8)-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--cont ajustarse al largo de la pantalla-->
-      <title>Document</title>
-        <script src="calcu.js"></script> <!--une el javascript con el html-->
-        </head>
-        <body>
-          <div>
-              <input type="number" name="Numero 1" id="num1"> <!--INPUT= ingresa datos. TYPe=acepta datos que son num -->
-                  <!--Id= para hacer referencia en el java script-->
-                      <input type="number" name="Numero 2" id="num2">
-                          <button id="sum">Sumar</button><!--identificador q hacer referencia para identificar el boton en java script-->
-                              <button id="rest">Restar</button>
-                                  <button id="mult">Multiplicar</button>
-                                      <button id="div">Dividir</button>
-                                          <h2 id="resultado"></h2>
-                                            </div>
-                                            </body>
-                                            </html>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="imc.html">IMC</a></li>
+            <li><a href="calcu.html">Calculadora</a></li>
+            <li><a href="colores.html">Colores</a></li>
+            <li><a href="adivina.html">Adivina</a></li>
+            <li><a href="dias.html">Días</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <div class="container">
+            <h1>Calculadora de Dos Números</h1>
+            <p>Introduce dos números y elige una operación.</p>
+            
+            <div class="calculator-grid">
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+
+                <div class="calc-buttons">
+                    <button id="sum">+</button>
+                    <button id="rest">-</button>
+                    <button id="mult">*</button>
+                    <button id="div">/</button>
+                </div>
+
+                <h2>Resultado: <span id="resultado">0</span></h2>
+            </div>
+        </div>
+    </main>
+
+    <script src="calcu.js"></script>
+</body>
+</html>

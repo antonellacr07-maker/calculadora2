@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="imc.html">IMC</a></li>
+            <li><a href="calcu.html">Calculadora</a></li>
+            <li><a href="colores.html">Colores</a></li>
+            <li><a href="adivina.html">Adivina</a></li>
+            <li><a href="dias.html">Dìas</a></li>
+    
+        </ul>
+    </nav>
+
+    <main id="content">
+        <div class="container">
+            <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+            <p>El IMC es un indicador de la relación entre tu peso y altura.</p>
+            <div class="form-group">
+                <label for="peso">Peso (en kg):</label>
+                <input type="number" id="peso" placeholder="Ej: 70">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (en metros):</label>
+                <input type="number" id="altura" placeholder="Ej: 1.75">
+            </div>
+            <button id="calcularIMC">Calcular</button>
+            <p id="resultadoIMC"></p>
+        </div>
+    </main>
+
+    <script src="imc.js"></script>
+</body>
+</html>
